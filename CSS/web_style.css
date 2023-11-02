@@ -1,0 +1,151 @@
+html { /* Sets the background to azure */
+    background-color: azure
+}
+
+body { /* Sets margins and padding to 0 */
+    margin: 0;
+    padding: 0;
+}
+
+/*Header CSS*/
+header { /* Header formatting */
+    background: #3268ea;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+@media screen and (max-width: 750px) { /* Mobile specific header formatting */
+    .headcontainer {
+    justify-content: space-evenly;
+    }
+}
+
+header section {
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.headcontainer { /* Formatting for specific content in header section, such as the banner and DDboxes  */
+    display: flex;
+    flex-wrap: wrap;
+    background: #4478f5;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px 20px 20px 20px;
+}
+.site_body p { /* Text formatting */
+    font-size: 18px;
+}
+label input {
+    display: none;
+}
+.DDboxes label { /* Makes drop-down boxes appear horizontally */
+    display: block;
+    background-size: 20px auto;
+    padding: 0 0 10px 30px;
+}
+label p { /* Formatting for DDboxes */
+    border-radius: 15px;
+    background-color: #3268ea;
+    padding: 5px 20px 5px 20px;
+    text-align: center;
+}
+label p:hover { /* DDboxes hover formatting */
+    background-color: azure;
+}
+nav label div { /* Margin settings for DDboxes */
+    margin: 10px 0 0 0;
+    display: none;
+}
+nav label input:hover ~ div { /* Instructs DDboxes to appear vertically on hover */
+    display: block;
+    }
+.DDboxes { /* Makes DDboxes wrap with screen size */
+    display: flex;
+    flex-wrap: wrap;
+}
+.DDboxes label {
+    margin: 0 
+}
+        
+.listitems p { /* Border style for list items */
+    border-style: double;
+}
+.listitems p:hover {
+    background-color: azure;
+}
+.social_list ul {
+    list-style: none;
+    display: flex;
+}
+        
+/*Body CSS*/
+.site_body { /* Background formatting for site body */
+    background: #3268ea; /*Background Blue*/
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+.site_body article { /* Foreground formatting for articles in site body */
+    background: #4478f5; /*Foreground Blue*/
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+}
+
+/*Sidebar CSS*/
+.sidebar_content { /* Formatting for sidebar background */
+    background: #3268ea;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+.sidebar_content div { /* Formatting for sidebar foreground */
+    background: #4478f5;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+}
+.img_roundedcorners { /* Makes images have rounded corners */
+    border-radius: 15px;
+}
+/*Sidebar CSS*/
+footer { /* Footer background formatting */
+    background: #3268ea;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+}
+footer .content_holder { /* Footer foreground formatting */
+    background: #4478f5;
+    border-radius: 15px;
+    background-size: cover;
+    background-position: center center;
+    margin: 20px 20px 20px 20px;
+    padding: 20px;
+}
+.glossary ul { /* Remove list style for glossary */
+    list-style: none;
+}
+.glossary li {
+    display: inline-flex;
+    flex-wrap: wrap;
+    text-decoration: underline;
+    margin: 2px 15px 2px 15px;
+}
+
+.footersocials ul {
+    list-style: none;
+}
+.footersocials li {
+    display: inline-flex;
+    border-style: double;
+}
+.footersocials li:hover {
+    background-color: #5184fd;
+}
+

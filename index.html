@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name = "viewport" content="width=device-width, initial-scale=1">
+    <title>Veteran Defence</title>
+    <link rel="stylesheet" href="CSS/grid_style_home.css">
+    <link rel="icon" href="images/little_image.png">
+    <link rel="stylesheet" href="CSS/web_style.css">
+    
+    <style> /* Certain internal CSS was used for formatting among all screen sizes.*/
+        h2 { /* Makes text align to center*/
+            text-align: center;
+        }
+        h3 {
+            text-align: center;
+        }
+        p {
+            text-align: center;
+        }
+        footer h3 {
+            text-align: left;
+        }
+        .supportBTN {
+            text-align: center;
+        }
+        .sidebar_content h2 {
+            display: flex;
+            justify-content: center;
+        }
+        .sidebar_content article { /* Instructs content to appear in column */
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .sidebar_content p {
+            padding: 10px 0 10px 0;
+            border-style: double;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center center;
+            
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .sidebar_content p:hover { /* When hovering, turn this background azure colour */
+            background-color: azure;
+        }
+    </style>
+    
+</head>
+
+<body> <!--For the purposes of borders and radiuses, some parts were double encased in sections and articles--> <!-- a -->
+    <div class="site_home" id="site">
+        <main id="main_home">
+            <header>
+                <div class="headcontainer">
+                    <section class="banner"> <!-- This conntains my site logo and banner -->
+                        <a href ="index.html"><img src="images/VD%20Logo.png" alt="Veteran Defence Logo" width="280" height="100"></a>
+                    </section>
+                    <nav>
+                        <section class="DDboxes"> <!-- This is where I impliment drop-down boxes. CSS makes the below list items appear when hovering -->
+                            <label> <a href="events.html"><p>Events</p></a>
+                            <input type="checkbox">
+                            <div class="listitems">
+                                <a href="events.html">Our Events</a>
+                                <a href="events.html">Operations</a>
+                                <a href="donate.html">Donate</a>
+                                <a href="volunteer.html">Volunteer</a>
+                            </div>
+                            </label>
+                            <label> <a href="support.html"><p>Support</p></a>
+                            <input type="checkbox">
+                            <div class="listitems">
+                                <a href="support.html">Medical</a>
+                                <a href="support.html">Physical</a>
+                                <a href="support.html">Monitary</a>
+                                <a href="support.html">R-U-Okay</a>
+                            </div>
+                            </label>
+                            <label> <a href="donate.html"><p>Donate</a>
+                            <input type="checkbox">
+                            <div class="listitems">
+                                <a href="donate.html">Fund Allocation</a>
+                                <a href="donate.html">Sponsors</a>
+                                <a href="donate.html">Affiliates</a>
+                                <a href="donate.html">How To Donate</a>
+                            </div>
+                            </label>
+                            <label> <a href="volunteer.html"><p>Volunteer</p></a>
+                            <input type="checkbox">
+                            <div class="listitems">
+                                <a href="volunteer.html">Upcoming</a>
+                                <a href="volunteer.html">Ideas</a>
+                                <a href="donate.html">Donate</a>
+                                <a href="volunteer.html">Volunteer</a>
+                            </div>
+                            </label>
+                        </section>
+                    </nav>
+                </div>
+            </header>
+            
+            <div class="site_body"> <!-- This is the body content, where the majority of content is displayed. They are seperated into articles and sections, so the double borders can surround them for aesthetic purposes. It also helps to centre content -->
+                <article class="content_home"> <!-- This content describes the purpose of the organization -->
+                    <h2>Home - We Are Their Defence</h2>
+                    <section>
+                        <p>Our Mission is to provide unwavering support, resources, and a sense of community to Australian Defence Force veterans, honoring their service and empowering them as they transition to civilian life. We strive to be a trusted source of support, guidance, and pportunitity for veterans as they embark on their post-service journey.</p>
+                        <img src="images/drawn%201.jpg" class="img_roundedcorners">
+                    </section>
+                </article>
+                <article class="content_origin"> <!-- This content describes the origin and founder of the charity -->
+                    <h2>Origin - Beginning of Veteran Defence</h2>
+                    <section>
+                        <p>Inspired by a deep sense of gratitude and a profound respect for the men and women who have served our nation, John Badman, a dedicated veteran and compassionate leader, founded Veteran Defence to make a meaningful difference in the lives of our military heroes. Having witnessed the challenges and sacrifices firsthand, John Badman embarked on a mission to ensure that no veteran would ever feel alone or unsupported. He believed that through collective efforts and unwavering dedication, we could honor their service and provide the vital support they so rightfully deserve. Veteran Defence stands as a testament to John Badman's commitment to giving back and making a lasting impact on the lives of Australia's defenders.</p>
+                        <img src="images/drawn%202.jpg" class="img_roundedcorners">
+                    </section>
+                </article>
+                <article class="content_events"> <!-- This content lists upcoming events that the viewer can investigate further -->
+                        <ul>
+                            <li>
+                                <h4>Operation: Run 4 Change</h4>
+                                <h5>November 6 - 10 AM</h5>
+                                <p>Lace up your running shoes for a charity run that brings together the community to raise awareness and funds for essential programs that assist veterans in the transition to civilian life.</p>
+                            </li>
+                            <li>
+                                <h4>Operation: Special Delivery</h4>
+                                <h5>November 20 - 11 AM</h5>
+                                <p>Get involved in putting together care packages filled with essentials, letters of appreciation, and comfort items for deployed servicepeople. We encourages the community to show gratitude to ADF members serving abroad.</p>
+                            </li>
+                            <li>
+                                <h4>Operation: Rebuild</h4>
+                                <h5>November 31 - 10 AM</h5>
+                                <p>Skilled tradespeople and volunteers come together to renovate and improve the homes of ADF veterans. We aims to create a safe and comfortable living spaces for those who've defended our country.</p>
+                            </li>
+                        </ul>
+                </article>
+                <article class="content_support"> <!-- This content shows support options for viewers who are possible veterans in need of support -->
+                    <h2>Support</h2>
+                    <section>
+                        <p>Just like our founder, Veteran Defence strives to create a country where every soldier who put their life on the line can be supported by the people they protected. Veteran Defence provides support to these soldiers, ranging from medical and financial aid to mental and physical relief. Thanks to affiliates and sponsors, Veteran Defence can even provide assistance in finding employment and housing. If you served in the ADF and are in need of assistance, click below.</p>
+                        <img src="images/VetDef%20Banner%201.jpg" class="img_roundedcorners">
+                    </section>
+                    
+                </article>
+            </div>
+            <aside class="sidebar_content"> <!-- This is sidebar content, and contains a list of volunteer options and events that require volunteers -->
+                <div>
+                    <h2>Volunteers Wanted:</h2>
+                    <article>
+                        <div>
+                            <h3>Operation: Run 4 Change</h3>
+                            <a href="volunteer.html"><p>Volunteers: 3/8</p></a> <!-- The volunteer count also acts as a button -->
+                        </div>
+                        <div>
+                            <h3>Operation: Special Delivery</h3>
+                            <a href="volunteer.html"><p>Volunteers: 4/8</p></a> <!-- The volunteer count also acts as a button -->
+                        </div>
+                        <div>
+                            <h3>Operation: Rebuild</h3>
+                            <a href="volunteer.html"><p>Volunteers: 1/8</p></a> <!-- The volunteer count also acts as a button -->
+                        </div>
+                    </article>
+                </div>
+            </aside>
+            <footer class="footer"> <!-- Fotter content begins here -->
+                <section class="content_holder">
+                        <article class="glossary">
+                            <h3>Website Glossary</h3> <!-- This is the website glossary, where viewers can click links to other pages and sections in the website -->
+                            <ul>
+                                <li><a href="index.html"><p>Our Mission</p></a></li>
+                                <li><a href="index.html"><p>About</p></a></li>
+                                <li><a href="index.html"><p>Partners</p></a></li>
+                                <li><a href="index.html"><p>News</p></a></li>
+                                <li><a href="donate.html"><p>Donate</p></a></li>
+                                <li><a href="volunteer.html"><p>Volunteers</p></a></li>
+                                <li><a href="events.html"><p>Events</p></a></li>
+                                <li><a href="index.html"><p>Stories</p></a></li>
+                                <li><a href="events.html"><p>Our Events</p></a></li>
+                                <li><a href="events.html"><p>Operations</p></a></li>
+                                <li><a href="support.html"><p>Medical Support</p></a></li>
+                                <li><a href="support.html"><p>Physical Support</p></a></li>
+                                <li><a href="support.html"><p>Monitary Support</p></a></li>
+                                <li><a href="support.html"><p>R-U-Okay</p></a></li>
+                                <li><a href="donate.html"><p>Fund Allocation</p></a></li>
+                                <li><a href="donate.html"><p>Sponsors</p></a></li>
+                                <li><a href="donate.html"><p>Affiliates</p></a></li>
+                                <li><a href="donate.html"><p>How To Donate</p></a></li>
+                                <li><a href="events.html"><p>Upcoming Events</p></a></li>
+                                <li><a href="events.html"><p>Ideas</p></a></li>
+                                <li><a href="index.html"><p>More</p></a></li>
+                            </ul>
+                        </article>
+                        <article class="footersocials">
+                            <h3>Veteran Defence Socials</h3> <!-- Section acts as links to Charity social media pages. -->
+                            <ul>
+                                <li><img src="images/facebook_logo.png" alt="Facebook Logo" width="50px" height="50px"></li>
+                                <li><img src="images/ingta_logo.png" alt="Instagram Logo" width="50px" height="50px"></li>
+                                <li><img src="images/yt_logo.webp" alt="Youtube Logo" width="50px" height="50px"></li>
+                                <li><img src="images/twit_x_logo.png" alt="Twitter/X Logo" width="50px" height="50px"></li>
+                            </ul>
+                        </article>
+                        <article class="truefooter">
+                            <p>1800-VETERAN-DEFENCE</p>
+                            <p>2 Bradford St, Mount Lawley, Western Australia 6050 Australia</p>
+                        </article>
+                    </section>
+            </footer>
+        </main>
+    </div>
+</body>
+</html>

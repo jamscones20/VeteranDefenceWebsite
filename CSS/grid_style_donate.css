@@ -1,0 +1,121 @@
+/* Many settings are clones on grid_style_home, see page for comments */
+/*Donate Page CSS*/
+/*Mobile*/
+#main_donate {
+    justify-content: center;
+    margin: 0 30px 0 30px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+        "header header"
+        "body body"
+        "sidebar sidebar"
+        "footer footer";
+}
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+
+.site_body {
+    grid-area: body;
+}
+.sidebar_content {
+    grid-area: sidebar;
+    text-align: center;
+}
+.sidebar_content img {
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    height: auto;
+}
+footer {
+    grid-area: footer;
+}
+
+/*Tablet*/
+@media screen and (min-width: 750px){
+    #main_donate {
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-template-areas: 
+            "header header"
+            "body sidebar"
+            "body sidebar"
+            "footer footer";
+        
+    }
+    header {
+    grid-area: header;
+    display: block;
+    }
+    header section {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .site_body {
+        grid-area: body;
+    }
+    .sidebar_content {
+        grid-area: sidebar;
+        text-align: center;
+    }
+   .sidebar_content img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+    footer {
+        grid-area: footer;
+    }
+}      
+
+/*Desktop*/
+@media screen and (min-width: 1200px){
+    #main_donate {
+        display: grid;
+        grid-template-columns: 0.7fr 0.8fr 0.5fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-template-areas: 
+            "header header header"
+            "body body sidebar"
+            "body body sidebar"
+            "footer footer footer";
+    }
+    header {
+        grid-area: header;
+    }
+    header section {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .site_body {
+        grid-area: body;
+    }
+    .sidebar_content {
+        grid-area: sidebar;
+        display: flex;
+        text-align: center;
+    }
+    .sidebar_content img {
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+        height: auto;
+    }
+    footer {
+        grid-area: footer;
+    }
+}

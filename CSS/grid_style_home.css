@@ -1,0 +1,108 @@
+#main_home {
+    justify-content: center; /* Make content centered for mobile */
+    margin: 0 30px 0 30px; /* Set margins for website */
+    
+    display: grid; /* Set display to grid type */
+    grid-template-columns: repeat(2, 1fr); /* Define grid parameters */
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 10px; /* Set grid gap in rows */
+    grid-column-gap: 20px; /* Set grid gap in columns */
+    grid-template-areas: /* Define grid area names */
+        "header header"
+        "body body"
+        "sidebar sidebar"
+        "footer footer";
+}
+header { /* Place header in header, flex content, centre content */
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+.site_body { /* Place body in body */
+    grid-area: body;
+}
+.site_body img { /* Image formatting settings */
+    width: 100%;
+    height: auto;
+}
+.sidebar_content { /* Place sidebar in sidebar, flex content, centre content */
+    grid-area: sidebar;
+    display: flex;
+    justify-content: center;
+}
+footer { /* Place footer in footer */
+    grid-area: footer;
+}
+
+/*Tablet*/
+@media screen and (min-width: 750px){
+    #main_home {
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-template-areas: 
+            "header header"
+            "body sidebar"
+            "body sidebar"
+            "footer footer";
+        
+    }
+    header { /* Change display to be block vertical */
+    grid-area: header;
+    display: block;
+    }
+    .site_body {
+        grid-area: body;
+    }
+    .site_body article { /* Change display to be block vertical */
+        display: block;
+    }
+    .sidebar_content {
+        grid-area: sidebar;
+    }
+    footer {
+        grid-area: footer;
+    }
+}      
+
+/*Desktop*/
+@media screen and (min-width: 1200px){
+    #main_home {
+        display: grid;
+        grid-template-columns: 0.7fr 0.8fr 0.5fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-template-areas: 
+            "header header header"
+            "body body sidebar"
+            "body body sidebar"
+            "footer footer footer";
+    }
+    header {
+        grid-area: header;
+    }
+    header section { /* Create padding */
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .site_body {
+        grid-area: body;
+    }
+    .site_body section { /* Make content flex horizontal */
+        display: flex;
+    }
+    .site_body img { /* New image parameters */
+        width: 300px;
+        height: 300px;
+        margin-left: 40px;
+    }
+    .sidebar_content {
+        grid-area: sidebar;
+    }
+    footer {
+        grid-area: footer;
+    }
+}

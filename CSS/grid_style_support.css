@@ -1,0 +1,118 @@
+/* Many settings are clones on grid_style_home, see page for comments */
+#main_support {
+    justify-content: center;
+    margin: 0 30px 0 30px;
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(4, auto);
+    grid-row-gap: 10px;
+    grid-column-gap: 20px;
+    grid-template-areas: 
+        "header header"
+        "body body"
+        "sidebar sidebar"
+        "footer footer";
+}
+header {
+    grid-area: header;
+    display: flex;
+    justify-content: center;
+}
+.site_body {
+    grid-area: body;
+}
+.site_body img {
+        max-width: 100%;
+        height: auto;
+    }
+.sidebar_content {
+    grid-area: sidebar;
+}
+.sidebar_content img {
+        max-width: 100%;
+        height: auto;
+    }
+footer {
+    grid-area: footer;
+}
+
+/*Tablet*/
+@media screen and (min-width: 750px){
+    #main_support {
+        display: grid;
+        grid-template-columns: 1.5fr 0.5fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-template-areas: 
+            "header header"
+            "body sidebar"
+            "body sidebar"
+            "footer footer";
+        
+    }
+    header {
+    grid-area: header;
+    display: block;
+    }
+    header section {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .site_body {
+        grid-area: body;
+    }
+    .site_body img {
+        margin: 20px 0 20px 0;
+    }
+    .sidebar_content {
+        grid-area: sidebar;
+    }
+    footer {
+        grid-area: footer;
+    }
+}      
+
+/*Desktop*/
+@media screen and (min-width: 1200px){
+    #main_support {
+        display: grid;
+        grid-template-columns: 0.7fr 0.8fr 0.5fr;
+        grid-template-rows: repeat(4, auto);
+        grid-row-gap: 10px;
+        grid-column-gap: 20px;
+        grid-template-areas: 
+            "header header header"
+            "body body sidebar"
+            "body body sidebar"
+            "footer footer footer";
+    }
+    header {
+        grid-area: header;
+    }
+    header section {
+        padding-top: 20px;
+        padding-left: 20px;
+    }
+    .site_body {
+        grid-area: body;
+    }
+    .mainsection {
+        display: flex;
+    }
+    .site_body img {
+        height: 500px;
+        width: auto;
+        margin-left: 40px;
+    }
+    .sidebar_content {
+        grid-area: sidebar;
+    }
+    .sidebar_content img {
+        
+    }
+    footer {
+        grid-area: footer;
+    }
+}
